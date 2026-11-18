@@ -57,6 +57,19 @@ public class Login {
             && password.equals(enteredPassword);
     }
 
+    // Getters used by Part 3 so that each message can record who sent it
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
     public String returnLoginStatus(boolean loggedIn) {
         if (loggedIn) {
             return "Welcome " + firstName + " " + lastName + ", it is great to see you again.";
